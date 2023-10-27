@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://wc5ahljhdb2r"]
+
+[ext_resource type="Script" path="res://cena_b.gd" id="1_xtkoq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lru67"]
+bg_color = Color(0.231373, 0.639216, 0.870588, 1)
+
+[node name="CenaB" type="Node2D"]
+script = ExtResource("1_xtkoq")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1152.0
+offset_bottom = 644.0
+size_flags_horizontal = 6
+theme_override_styles/panel = SubResource("StyleBoxFlat_lru67")
+
+[node name="GoA" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -37.5
+offset_top = -15.5
+offset_right = 37.5
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "Ir para A"

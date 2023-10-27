@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://cyv7xd8j82j2i"]
+
+[ext_resource type="Script" path="res://continua.gd" id="1_4jujl"]
+[ext_resource type="PackedScene" uid="uid://b5hoqhqbic0bt" path="res://cena_a.tscn" id="1_cooqu"]
+[ext_resource type="PackedScene" uid="uid://wc5ahljhdb2r" path="res://cena_b.tscn" id="2_evqqn"]
+
+[node name="Continua" type="Node2D"]
+script = ExtResource("1_4jujl")
+
+[node name="CenaA" parent="." instance=ExtResource("1_cooqu")]
+visible = false
+position = Vector2(3, 3)
+
+[node name="CenaB" parent="." instance=ExtResource("2_evqqn")]
+position = Vector2(1, 2)
